@@ -667,7 +667,8 @@ function computeLeaderboard(grouped) {
     const leaderboardEl = document.getElementById('leaderboardList');
     
     // Calculate model ranks for all 6 metrics
-    const rankScores = { 'Smart': 0, 'CAGE': 0, 'Arise-Silhouette': 0 };
+    const rankScores = {};
+    MODELS.forEach(m => rankScores[m] = 0);
     
     METRIC_NAMES.forEach(metric => {
         const performances = MODELS.map(model => {
