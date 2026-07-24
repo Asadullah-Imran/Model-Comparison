@@ -728,7 +728,7 @@ function drawRadarChart(grouped) {
             dropShadow: { enabled: true, blur: 8, left: 1, top: 1, opacity: 0.2 }
         },
         series: series,
-        colors: [MODEL_COLORS['Smart'], MODEL_COLORS['CAGE'], MODEL_COLORS['Arise-Silhouette']],
+        colors: MODELS.map(model => MODEL_COLORS[model]),
         stroke: { width: 2 },
         fill: { opacity: 0.15 },
         markers: { size: 4, hover: { size: 6 } },
@@ -784,7 +784,6 @@ function drawBoxplotChart(grouped, metric) {
         const values = grouped[model].map(r => r[metric] || 0).sort((a,b)=>a-b);
         if (values.length === 0) return { x: model, y: [0, 0, 0, 0, 0] };
         
-        // Quantile calculations
         const min = values[0];
         const max = values[values.length - 1];
         const q1 = stats.median(values.slice(0, Math.floor(values.length / 2)));
@@ -804,12 +803,22 @@ function drawBoxplotChart(grouped, metric) {
             toolbar: { show: false }
         },
         series: [{ type: 'boxPlot', data: seriesData }],
-        colors: [MODEL_COLORS['Smart'], MODEL_COLORS['CAGE'], MODEL_COLORS['Arise-Silhouette']],
+        colors: MODELS.map(model => MODEL_COLORS[model]),
         plotOptions: {
             boxPlot: {
                 colors: {
-                    upper: MODEL_COLORS['Smart'],
-                    lower: MODEL_COLORS['CAGE']
+                    upper: '#8b5cf6', // Violet
+                    lower: '#10b981'  // Emerald
+                }
+            }
+        },
+        xaxis: {
+            type: 'category',
+            categories: MODELS,
+            labels: {
+                style: {
+                    fontSize: '11px',
+                    fontWeight: 600
                 }
             }
         },
@@ -850,7 +859,7 @@ function drawLineChart(grouped, metric) {
             zoom: { enabled: false }
         },
         series: series,
-        colors: [MODEL_COLORS['Smart'], MODEL_COLORS['CAGE'], MODEL_COLORS['Arise-Silhouette']],
+        colors: MODELS.map(model => MODEL_COLORS[model]),
         stroke: { width: 3, curve: 'smooth' },
         markers: { size: 3 },
         xaxis: {
