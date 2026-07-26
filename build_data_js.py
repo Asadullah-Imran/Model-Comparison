@@ -60,9 +60,14 @@ def main():
             "link": os.path.join(base_dir, "CAGE", "link.txt")
         },
         {
-            "name": "Arise-Silhouette",
-            "csv": os.path.join(base_dir, "Arise-Sillhoute", "metrics_all_datasets.csv"),
-            "link": os.path.join(base_dir, "Arise-Sillhoute", "link.txt")
+            "name": "Arise",
+            "csv": os.path.join(base_dir, "Arise", "metrics_all_datasets.csv"),
+            "link": os.path.join(base_dir, "Arise", "link.txt")
+        },
+        {
+            "name": "Arise-Sill",
+            "csv": os.path.join(base_dir, "Arise-Sill", "metrics_all_datasets.csv"),
+            "link": os.path.join(base_dir, "Arise-Sill", "link.txt")
         },
         {
             "name": "SpatialGlue",

@@ -6,7 +6,8 @@ const state = {
     colabLinks: {
         'Smart': '',
         'CAGE': '',
-        'Arise-Silhouette': '',
+        'Arise': '',
+        'Arise-Sill': '',
         'SpatialGlue': ''
     },
     activeTab: 'overview',
@@ -42,15 +43,21 @@ const state = {
 };
 
 const METRIC_NAMES = ['ARI', 'NMI', 'AMI', 'Homogeneity', 'V-measure', 'Silhouette'];
-const MODELS = ['Smart', 'CAGE', 'Arise-Silhouette', 'SpatialGlue'];
+const MODELS = ['Smart', 'CAGE', 'Arise', 'Arise-Sill', 'SpatialGlue'];
 
 // Theme Colors matching CSS variables
 const MODEL_COLORS = {
     'Smart': '#8b5cf6',            // Purple/Indigo
     'CAGE': '#10b981',             // Green/Teal
-    'Arise-Silhouette': '#f43f5e', // Rose/Pink
+    'Arise': '#f43f5e',            // Rose/Pink
+    'Arise-Sill': '#ec4899',       // Fuchsia/Magenta
     'SpatialGlue': '#f59e0b'       // Amber/Orange
 };
+
+function getModelPrefix(modelName) {
+    if (modelName === 'Arise-Sill') return 'arisesill';
+    return modelName.toLowerCase();
+}
 
 // ==========================================================================
 // INITIALIZATION
@@ -176,30 +183,34 @@ async function attemptDataLoad() {
     
     try {
         // Attempt to load CSV files dynamically from local folders
-        const [smartCsv, cageCsv, ariseCsv, spatialglueCsv, smartLink, cageLink, ariseLink, spatialglueLink] = await Promise.all([
+        const [smartCsv, cageCsv, ariseCsv, ariseNewCsv, spatialglueCsv, smartLink, cageLink, ariseLink, ariseNewLink, spatialglueLink] = await Promise.all([
             fetch('./Smart/metrics_all_datasets.csv').then(res => res.ok ? res.text() : null),
             fetch('./CAGE/CAGE_all_results.csv').then(res => res.ok ? res.text() : null),
-            fetch('./Arise-Sillhoute/metrics_all_datasets.csv').then(res => res.ok ? res.text() : null),
+            fetch('./Arise-Sill/metrics_all_datasets.csv').then(res => res.ok ? res.text() : null),
+            fetch('./Arise/metrics_all_datasets.csv').then(res => res.ok ? res.text() : null),
             fetch('./SpatialGlue/SpatialGlue_all_results.csv').then(res => res.ok ? res.text() : null),
             fetch('./Smart/link.txt').then(res => res.ok ? res.text() : null),
             fetch('./CAGE/link.txt').then(res => res.ok ? res.text() : null),
-            fetch('./Arise-Sillhoute/link.txt').then(res => res.ok ? res.text() : null),
+            fetch('./Arise-Sill/link.txt').then(res => res.ok ? res.text() : null),
+            fetch('./Arise/link.txt').then(res => res.ok ? res.text() : null),
             fetch('./SpatialGlue/link.txt').then(res => res.ok ? res.text() : null)
         ]);
 
-        if (smartCsv && cageCsv && ariseCsv && spatialglueCsv) {
+        if (smartCsv && cageCsv && ariseCsv && ariseNewCsv && spatialglueCsv) {
             // Success! Parse loaded strings
             const parsedData = [
                 ...parseCSVText(smartCsv, 'Smart'),
                 ...parseCSVText(cageCsv, 'CAGE'),
-                ...parseCSVText(ariseCsv, 'Arise-Silhouette'),
+                ...parseCSVText(ariseCsv, 'Arise-Sill'),
+                ...parseCSVText(ariseNewCsv, 'Arise'),
                 ...parseCSVText(spatialglueCsv, 'SpatialGlue')
             ];
             
             state.rawData = parsedData;
             state.colabLinks['Smart'] = smartLink ? smartLink.trim() : '';
             state.colabLinks['CAGE'] = cageLink ? cageLink.trim() : '';
-            state.colabLinks['Arise-Silhouette'] = ariseLink ? ariseLink.trim() : '';
+            state.colabLinks['Arise-Sill'] = ariseLink ? ariseLink.trim() : '';
+            state.colabLinks['Arise'] = ariseNewLink ? ariseNewLink.trim() : '';
             state.colabLinks['SpatialGlue'] = spatialglueLink ? spatialglueLink.trim() : '';
             
             updateStatus('loaded', 'Disk Files Connected');
@@ -297,9 +308,13 @@ async function handleManualFiles(fileList) {
                         state.rawData = state.rawData.filter(r => r.model !== 'CAGE');
                         state.rawData.push(...parseCSVText(text, 'CAGE'));
                         loadedCount++;
-                    } else if (name.includes('arise') && name.endsWith('.csv')) {
-                        state.rawData = state.rawData.filter(r => r.model !== 'Arise-Silhouette');
-                        state.rawData.push(...parseCSVText(text, 'Arise-Silhouette'));
+                    } else if (name.toLowerCase().includes('arise') && name.toLowerCase().includes('sill') && name.endsWith('.csv')) {
+                        state.rawData = state.rawData.filter(r => r.model !== 'Arise-Sill');
+                        state.rawData.push(...parseCSVText(text, 'Arise-Sill'));
+                        loadedCount++;
+                    } else if (name.toLowerCase().includes('arise') && name.endsWith('.csv')) {
+                        state.rawData = state.rawData.filter(r => r.model !== 'Arise');
+                        state.rawData.push(...parseCSVText(text, 'Arise'));
                         loadedCount++;
                     } else if (name.includes('spatialglue') && name.endsWith('.csv')) {
                         state.rawData = state.rawData.filter(r => r.model !== 'SpatialGlue');
@@ -315,7 +330,8 @@ async function handleManualFiles(fileList) {
                         // For simplicity, we search for keyword
                         if (name.includes('smart')) state.colabLinks['Smart'] = text.trim();
                         else if (name.includes('cage')) state.colabLinks['CAGE'] = text.trim();
-                        else if (name.includes('arise')) state.colabLinks['Arise-Silhouette'] = text.trim();
+                        else if (name.toLowerCase().includes('arise') && name.toLowerCase().includes('sill')) state.colabLinks['Arise-Sill'] = text.trim();
+                        else if (name.toLowerCase().includes('arise')) state.colabLinks['Arise'] = text.trim();
                         else if (name.includes('spatialglue')) state.colabLinks['SpatialGlue'] = text.trim();
                         else {
                             // Apply to first available
@@ -390,7 +406,8 @@ function updateStatus(status, text) {
     let filesState = {
         'Smart (CSV)': hasDataForModel('Smart'),
         'CAGE (CSV)': hasDataForModel('CAGE'),
-        'Arise-Silhouette (CSV)': hasDataForModel('Arise-Silhouette'),
+        'Arise (CSV)': hasDataForModel('Arise'),
+        'Arise-Sill (CSV)': hasDataForModel('Arise-Sill'),
         'SpatialGlue (CSV)': hasDataForModel('SpatialGlue'),
     };
     
@@ -418,7 +435,8 @@ function hasDataForModel(modelName) {
 function updateColabUI() {
     const smartA = document.getElementById('smartColab');
     const cageA = document.getElementById('cageColab');
-    const ariseA = document.getElementById('ariseColab');
+    const ariseNewA = document.getElementById('ariseColab');
+    const ariseA = document.getElementById('arisesillColab');
     const spatialglueA = document.getElementById('spatialglueColab');
     
     if (state.colabLinks['Smart']) {
@@ -439,8 +457,17 @@ function updateColabUI() {
         cageA.style.opacity = '0.4';
     }
 
-    if (state.colabLinks['Arise-Silhouette']) {
-        ariseA.href = state.colabLinks['Arise-Silhouette'];
+    if (state.colabLinks['Arise']) {
+        ariseNewA.href = state.colabLinks['Arise'];
+        ariseNewA.style.pointerEvents = 'auto';
+        ariseNewA.style.opacity = '1';
+    } else {
+        ariseNewA.style.pointerEvents = 'none';
+        ariseNewA.style.opacity = '0.4';
+    }
+
+    if (state.colabLinks['Arise-Sill']) {
+        ariseA.href = state.colabLinks['Arise-Sill'];
         ariseA.style.pointerEvents = 'auto';
         ariseA.style.opacity = '1';
     } else {
@@ -627,7 +654,7 @@ function renderOverviewTab() {
     // Compute cards averages
     MODELS.forEach(model => {
         const modelRows = grouped[model];
-        const prefix = model.split('-')[0].toLowerCase(); // 'smart', 'cage', 'arise'
+        const prefix = getModelPrefix(model);
         
         if (modelRows.length > 0) {
             const aris = modelRows.map(r => r.ARI);
@@ -695,7 +722,7 @@ function computeLeaderboard(grouped) {
     
     let html = '';
     rankList.forEach((rankObj, idx) => {
-        const clsPrefix = rankObj.model.split('-')[0].toLowerCase();
+        const clsPrefix = getModelPrefix(rankObj.model);
         html += `
             <div class="leaderboard-item ${clsPrefix}-rank-border">
                 <div class="leaderboard-rank">${idx + 1}</div>
@@ -839,16 +866,35 @@ function drawBoxplotChart(grouped, metric) {
 }
 
 function drawLineChart(grouped, metric) {
-    // Sort values by seed values to align line steps correctly
-    const prepareSeries = (model) => {
-        const rows = [...grouped[model]].sort((a, b) => a.seed - b.seed);
-        return rows.map(r => {
-            return { x: `Seed ${r.seed}`, y: parseFloat((r[metric] || 0).toFixed(4)) };
-        });
-    };
+    // Get all unique seeds present in the grouped data
+    const allSeeds = new Set();
+    MODELS.forEach(model => {
+        if (grouped[model]) {
+            grouped[model].forEach(r => {
+                if (r.seed !== undefined && r.seed !== null) {
+                    allSeeds.add(Number(r.seed));
+                }
+            });
+        }
+    });
 
+    // Sort seeds ascending to align X-axis properly
+    const sortedSeeds = Array.from(allSeeds).sort((a, b) => a - b);
+    const categories = sortedSeeds.map(s => `Seed ${s}`);
+
+    // Build series data aligned to categories
     const series = MODELS.map(model => {
-        return { name: model, data: prepareSeries(model) };
+        const modelRows = grouped[model] || [];
+        const seedToValue = {};
+        modelRows.forEach(r => {
+            seedToValue[Number(r.seed)] = parseFloat((r[metric] || 0).toFixed(4));
+        });
+
+        const data = sortedSeeds.map(seed => {
+            return seedToValue[seed] !== undefined ? seedToValue[seed] : null;
+        });
+
+        return { name: model, data: data };
     });
 
     const options = {
@@ -861,9 +907,9 @@ function drawLineChart(grouped, metric) {
         series: series,
         colors: MODELS.map(model => MODEL_COLORS[model]),
         stroke: { width: 3, curve: 'smooth' },
-        markers: { size: 3 },
+        markers: { size: 4, hover: { size: 6 } },
         xaxis: {
-            type: 'category',
+            categories: categories,
             labels: { rotate: -45, style: { fontSize: '9px' } }
         },
         yaxis: {
@@ -1103,13 +1149,13 @@ function drawH2HDeltaChart(matchedA, matchedB, metric) {
         series: [{ name: `Delta Score (${state.compareModelB} - ${state.compareModelA})`, data: diffData }],
         colors: [
             function({ value }) {
-                return value >= 0 ? MODEL_COLORS['CAGE'] : MODEL_COLORS['Arise-Silhouette']; // positive = green, negative = red
+                return value >= 0 ? MODEL_COLORS['CAGE'] : MODEL_COLORS['Arise']; // positive = green, negative = red
             }
         ],
         plotOptions: {
             bar: {
                 borderRadius: 2,
-                colors: { ranges: [{ from: -10, to: 0, color: MODEL_COLORS['Arise-Silhouette'] }, { from: 0, to: 10, color: MODEL_COLORS['CAGE'] }] }
+                colors: { ranges: [{ from: -10, to: 0, color: MODEL_COLORS['Arise'] }, { from: 0, to: 10, color: MODEL_COLORS['CAGE'] }] }
             }
         },
         xaxis: {
@@ -1305,7 +1351,7 @@ function renderStabilityTab() {
     
     MODELS.forEach(model => {
         const rows = grouped[model];
-        const clsPrefix = model.split('-')[0].toLowerCase();
+        const clsPrefix = getModelPrefix(model);
         
         METRIC_NAMES.forEach((metric, mIdx) => {
             const vals = rows.map(r => r[metric] || 0);
@@ -1394,7 +1440,7 @@ function renderInspectorTab() {
     let html = '';
     
     data.forEach(r => {
-        const clsPrefix = r.model.split('-')[0].toLowerCase();
+        const clsPrefix = getModelPrefix(r.model);
         html += `
             <tr>
                 <td class="model-text-${clsPrefix}">${r.model}</td>

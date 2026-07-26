@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- Lucide Icons -->
     <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.js"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css?v=1.0.1">
 </head>
 <body>
     <div class="app-container">
@@ -69,7 +69,10 @@
                         <i data-lucide="external-link"></i> CAGE Colab
                     </a>
                     <a id="ariseColab" href="#" target="_blank" class="colab-link arise-color">
-                        <i data-lucide="external-link"></i> Arise-Silhouette
+                        <i data-lucide="external-link"></i> Arise Colab
+                    </a>
+                    <a id="arisesillColab" href="#" target="_blank" class="colab-link arisesill-color">
+                        <i data-lucide="external-link"></i> Arise-Sill
                     </a>
                     <a id="spatialglueColab" href="#" target="_blank" class="colab-link spatialglue-color">
                         <i data-lucide="external-link"></i> SpatialGlue Colab
@@ -166,7 +169,7 @@
                         <div class="model-summary-card arise-border">
                             <div class="card-glow arise-bg"></div>
                             <div class="card-header">
-                                <h3>Arise-Silhouette</h3>
+                                <h3>Arise</h3>
                                 <span class="model-badge arise-badge">Model 3</span>
                             </div>
                             <div class="metric-row">
@@ -188,11 +191,36 @@
                             </div>
                         </div>
 
+                        <div class="model-summary-card arisesill-border">
+                            <div class="card-glow arisesill-bg"></div>
+                            <div class="card-header">
+                                <h3>Arise-Sill</h3>
+                                <span class="model-badge arisesill-badge">Model 4</span>
+                            </div>
+                            <div class="metric-row">
+                                <div class="metric-block">
+                                    <span class="metric-lbl">Mean ARI</span>
+                                    <h4 id="arisesillMeanARI" class="metric-val">-</h4>
+                                </div>
+                                <div class="metric-block">
+                                    <span class="metric-lbl">Mean Silhouette</span>
+                                    <h4 id="arisesillMeanSilhouette" class="metric-val">-</h4>
+                                </div>
+                                <div class="metric-block">
+                                    <span class="metric-lbl">Mean NMI</span>
+                                    <h4 id="arisesillMeanNMI" class="metric-val">-</h4>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span id="arisesillStabilityLabel" class="stability-text"><i data-lucide="activity"></i> Seed Variance: -</span>
+                            </div>
+                        </div>
+
                         <div class="model-summary-card spatialglue-border">
                             <div class="card-glow spatialglue-bg"></div>
                             <div class="card-header">
                                 <h3>SpatialGlue</h3>
-                                <span class="model-badge spatialglue-badge">Model 4</span>
+                                <span class="model-badge spatialglue-badge">Model 5</span>
                             </div>
                             <div class="metric-row">
                                 <div class="metric-block">
@@ -299,7 +327,8 @@
                                 <select id="compareModelA" class="styled-select">
                                     <option value="Smart" selected>Smart</option>
                                     <option value="CAGE">CAGE</option>
-                                    <option value="Arise-Silhouette">Arise-Silhouette</option>
+                                    <option value="Arise">Arise</option>
+                                    <option value="Arise-Sill">Arise-Sill</option>
                                     <option value="SpatialGlue">SpatialGlue</option>
                                 </select>
                             </div>
@@ -309,7 +338,8 @@
                                 <select id="compareModelB" class="styled-select">
                                     <option value="Smart">Smart</option>
                                     <option value="CAGE" selected>CAGE</option>
-                                    <option value="Arise-Silhouette">Arise-Silhouette</option>
+                                    <option value="Arise">Arise</option>
+                                    <option value="Arise-Sill">Arise-Sill</option>
                                     <option value="SpatialGlue">SpatialGlue</option>
                                 </select>
                             </div>
@@ -481,7 +511,8 @@
                                     <option value="all">All Models</option>
                                     <option value="Smart">Smart</option>
                                     <option value="CAGE">CAGE</option>
-                                    <option value="Arise-Silhouette">Arise-Silhouette</option>
+                                    <option value="Arise">Arise</option>
+                                    <option value="Arise-Sill">Arise-Sill</option>
                                     <option value="SpatialGlue">SpatialGlue</option>
                                 </select>
                                 <button class="btn primary-btn" id="exportRawBtn"><i data-lucide="download"></i> Download CSV</button>
@@ -538,7 +569,7 @@
                 <div class="upload-zone" id="dropZone">
                     <i data-lucide="upload-cloud" class="upload-icon"></i>
                     <h3>Drag & Drop Files Here</h3>
-                    <p>Select or drag files from folders: <strong>Smart</strong>, <strong>CAGE</strong>, <strong>Arise-Sillhoute</strong></p>
+                     <p>Select or drag files from folders: <strong>Smart</strong>, <strong>CAGE</strong>, <strong>Arise</strong>, <strong>Arise-Sill</strong>, <strong>SpatialGlue</strong></p>
                     <button class="btn primary-btn select-files-btn" onclick="document.getElementById('hiddenFileInput').click()">
                         Choose Files
                     </button>
@@ -560,7 +591,7 @@
     <!-- Tiny Alert Notification toast -->
     <div class="toast-container" id="toastContainer"></div>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=1.0.1"></script>
     <script>
         // Initialize Lucide Icons after scripts load
         lucide.createIcons();

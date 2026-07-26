@@ -30,6 +30,11 @@
     --arise-glow: hsla(var(--arise-base), 85%, 50%, 0.1);
     --arise-bg-soft: hsla(var(--arise-base), 85%, 50%, 0.06);
 
+    --arisesill-base: 315; /* HSL angle (Fuchsia/Magenta) */
+    --arisesill-color: hsl(var(--arisesill-base), 85%, 50%);
+    --arisesill-glow: hsla(var(--arisesill-base), 85%, 50%, 0.1);
+    --arisesill-bg-soft: hsla(var(--arisesill-base), 85%, 50%, 0.06);
+
     --spatialglue-base: 38; /* HSL angle (Amber/Orange) */
     --spatialglue-color: hsl(var(--spatialglue-base), 92%, 46%);
     --spatialglue-glow: hsla(var(--spatialglue-base), 92%, 46%, 0.1);
@@ -76,6 +81,10 @@ body.dark-theme {
     --arise-color: hsl(var(--arise-base), 90%, 60%);
     --arise-glow: hsla(var(--arise-base), 90%, 60%, 0.15);
     --arise-bg-soft: hsla(var(--arise-base), 90%, 60%, 0.06);
+
+    --arisesill-color: hsl(var(--arisesill-base), 90%, 60%);
+    --arisesill-glow: hsla(var(--arisesill-base), 90%, 60%, 0.15);
+    --arisesill-bg-soft: hsla(var(--arisesill-base), 90%, 60%, 0.06);
 
     --spatialglue-color: hsl(var(--spatialglue-base), 95%, 55%);
     --spatialglue-glow: hsla(var(--spatialglue-base), 95%, 55%, 0.15);
@@ -336,6 +345,12 @@ button, select, input {
     background-color: var(--arise-bg-soft);
     color: var(--arise-color);
     border-color: rgba(244, 63, 94, 0.2);
+}
+
+.colab-link.arisesill-color {
+    background-color: var(--arisesill-bg-soft);
+    color: var(--arisesill-color);
+    border-color: rgba(236, 72, 153, 0.2);
 }
 
 .colab-link.spatialglue-color {
@@ -640,12 +655,14 @@ button, select, input {
 .smart-bg { background-color: var(--smart-color); }
 .cage-bg { background-color: var(--cage-color); }
 .arise-bg { background-color: var(--arise-color); }
+.arisesill-bg { background-color: var(--arisesill-color); }
 .spatialglue-bg { background-color: var(--spatialglue-color); }
 
 /* Glowing borders depending on active model selection */
 .smart-border:hover { border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 8px 30px var(--smart-glow); }
 .cage-border:hover { border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 8px 30px var(--cage-glow); }
 .arise-border:hover { border-color: rgba(244, 63, 94, 0.4); box-shadow: 0 8px 30px var(--arise-glow); }
+.arisesill-border:hover { border-color: rgba(236, 72, 153, 0.4); box-shadow: 0 8px 30px var(--arisesill-glow); }
 .spatialglue-border:hover { border-color: rgba(245, 158, 11, 0.4); box-shadow: 0 8px 30px var(--spatialglue-glow); }
 
 .card-header {
@@ -677,6 +694,7 @@ button, select, input {
 .smart-badge { background-color: var(--smart-bg-soft); color: var(--smart-color); border: 1px solid rgba(139, 92, 246, 0.2); }
 .cage-badge { background-color: var(--cage-bg-soft); color: var(--cage-color); border: 1px solid rgba(16, 185, 129, 0.2); }
 .arise-badge { background-color: var(--arise-bg-soft); color: var(--arise-color); border: 1px solid rgba(244, 63, 94, 0.2); }
+.arisesill-badge { background-color: var(--arisesill-bg-soft); color: var(--arisesill-color); border: 1px solid rgba(236, 72, 153, 0.2); }
 .spatialglue-badge { background-color: var(--spatialglue-bg-soft); color: var(--spatialglue-color); border: 1px solid rgba(245, 158, 11, 0.2); }
 
 .metric-row {
@@ -845,6 +863,7 @@ body.dark-theme .metric-block {
 .leaderboard-item.smart-rank-border { border-left: 4px solid var(--smart-color); }
 .leaderboard-item.cage-rank-border { border-left: 4px solid var(--cage-color); }
 .leaderboard-item.arise-rank-border { border-left: 4px solid var(--arise-color); }
+.leaderboard-item.arisesill-rank-border { border-left: 4px solid var(--arisesill-color); }
 .leaderboard-item.spatialglue-rank-border { border-left: 4px solid var(--spatialglue-color); }
 
 /* ==========================================================================
@@ -1265,6 +1284,7 @@ body.dark-theme .metric-block {
 .model-text-smart { color: var(--smart-color); font-weight: 600; }
 .model-text-cage { color: var(--cage-color); font-weight: 600; }
 .model-text-arise { color: var(--arise-color); font-weight: 600; }
+.model-text-arisesill { color: var(--arisesill-color); font-weight: 600; }
 .model-text-spatialglue { color: var(--spatialglue-color); font-weight: 600; }
 
 /* ==========================================================================

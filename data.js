@@ -2643,13 +2643,1333 @@ window.fallbackData = [
   {
     "dataset": "10x_human_lymph_node_A1",
     "seed": 13,
+    "ARI": 0.28002169862603316,
+    "NMI": 0.39325137101296864,
+    "AMI": 0.38924572050386536,
+    "Homogeneity": 0.4292372043230334,
+    "V-measure": 0.3932513710129686,
+    "Silhouette": 0.16185734,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 2560,
+    "ARI": 0.2834781442239268,
+    "NMI": 0.38957275845812767,
+    "AMI": 0.38560166501172394,
+    "Homogeneity": 0.42064778473320474,
+    "V-measure": 0.3895727584581276,
+    "Silhouette": 0.16074096,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 641,
+    "ARI": 0.268437703827812,
+    "NMI": 0.3764999021912717,
+    "AMI": 0.37233394865780883,
+    "Homogeneity": 0.39404716240956555,
+    "V-measure": 0.3764999021912718,
+    "Silhouette": 0.16504984,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 1892,
+    "ARI": 0.2650155481546402,
+    "NMI": 0.37240101717977575,
+    "AMI": 0.3682013084818657,
+    "Homogeneity": 0.38938588951794284,
+    "V-measure": 0.3724010171797757,
+    "Silhouette": 0.17019734,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 1173,
+    "ARI": 0.2793171794920955,
+    "NMI": 0.3845019800555618,
+    "AMI": 0.38043763836983346,
+    "Homogeneity": 0.41977843063325343,
+    "V-measure": 0.38450198005556185,
+    "Silhouette": 0.16371763,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 69,
+    "ARI": 0.28846164787053513,
+    "NMI": 0.3869493293917008,
+    "AMI": 0.3828823134474963,
+    "Homogeneity": 0.42061897938188175,
+    "V-measure": 0.38694932939170085,
+    "Silhouette": 0.16263814,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 2024,
+    "ARI": 0.2803518951280775,
+    "NMI": 0.38790249247868247,
+    "AMI": 0.383865542181663,
+    "Homogeneity": 0.4228342146426665,
+    "V-measure": 0.38790249247868247,
+    "Silhouette": 0.16948166,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 231,
+    "ARI": 0.2533880872642012,
+    "NMI": 0.3646890203326492,
+    "AMI": 0.3604120338928998,
+    "Homogeneity": 0.3788515102268338,
+    "V-measure": 0.36468902033264916,
+    "Silhouette": 0.17208311,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 1971,
+    "ARI": 0.2754529625663268,
+    "NMI": 0.37360075377460095,
+    "AMI": 0.3693878100729618,
+    "Homogeneity": 0.3886188670323547,
+    "V-measure": 0.373600753774601,
+    "Silhouette": 0.16671732,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 2497,
+    "ARI": 0.2678879480048981,
+    "NMI": 0.3818607742246391,
+    "AMI": 0.37777416822506044,
+    "Homogeneity": 0.4168218028575977,
+    "V-measure": 0.38186077422463915,
+    "Silhouette": 0.17121716,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 338,
+    "ARI": 0.28667340434250344,
+    "NMI": 0.3909296455773834,
+    "AMI": 0.38689664286809233,
+    "Homogeneity": 0.4263723658527103,
+    "V-measure": 0.3909296455773834,
+    "Silhouette": 0.16035712,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 3127,
+    "ARI": 0.27140089495130393,
+    "NMI": 0.3729947860540826,
+    "AMI": 0.36879347760063325,
+    "Homogeneity": 0.38908306532806125,
+    "V-measure": 0.3729947860540826,
+    "Silhouette": 0.16870187,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 2001,
+    "ARI": 0.2710377871373412,
+    "NMI": 0.38765595637752565,
+    "AMI": 0.38362036314231734,
+    "Homogeneity": 0.4240585264020011,
+    "V-measure": 0.38765595637752565,
+    "Silhouette": 0.16300663,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 2022,
+    "ARI": 0.2726683777005154,
+    "NMI": 0.3796893197840256,
+    "AMI": 0.3755290741560605,
+    "Homogeneity": 0.39702235535113356,
+    "V-measure": 0.37968931978402565,
+    "Silhouette": 0.15956748,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 574,
+    "ARI": 0.27263811541554195,
+    "NMI": 0.37848119117844137,
+    "AMI": 0.3743237753077424,
+    "Homogeneity": 0.3954062907351052,
+    "V-measure": 0.37848119117844137,
+    "Silhouette": 0.16569766,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 2428,
+    "ARI": 0.2757060894470291,
+    "NMI": 0.38737681741556884,
+    "AMI": 0.3833287907982678,
+    "Homogeneity": 0.4233506270453588,
+    "V-measure": 0.3873768174155688,
+    "Silhouette": 0.15830025,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 999,
+    "ARI": 0.2697590341337156,
+    "NMI": 0.3747288201915484,
+    "AMI": 0.3705276543679005,
+    "Homogeneity": 0.39027942057959486,
+    "V-measure": 0.37472882019154846,
+    "Silhouette": 0.1698128,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 1187,
+    "ARI": 0.26319733279756763,
+    "NMI": 0.37369513226363305,
+    "AMI": 0.36956403311315034,
+    "Homogeneity": 0.4080101252027343,
+    "V-measure": 0.37369513226363305,
+    "Silhouette": 0.16316679,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 42,
+    "ARI": 0.2149664177723274,
+    "NMI": 0.3661710004499799,
+    "AMI": 0.3620099262465127,
+    "Homogeneity": 0.40217004273482504,
+    "V-measure": 0.36617100044997997,
+    "Silhouette": 0.141353,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 3999,
+    "ARI": 0.279401152691128,
+    "NMI": 0.38211939547322193,
+    "AMI": 0.3780352129409095,
+    "Homogeneity": 0.4170317883375381,
+    "V-measure": 0.38211939547322193,
+    "Silhouette": 0.16393468,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 13,
+    "ARI": 0.16469808329237862,
+    "NMI": 0.31622922840125156,
+    "AMI": 0.3105320321716021,
+    "Homogeneity": 0.35647196377726814,
+    "V-measure": 0.3162292284012515,
+    "Silhouette": 0.10732553,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 2560,
+    "ARI": 0.17588785698049417,
+    "NMI": 0.3030113482837586,
+    "AMI": 0.2972307002233268,
+    "Homogeneity": 0.3432993568681849,
+    "V-measure": 0.3030113482837586,
+    "Silhouette": 0.09810532,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 641,
+    "ARI": 0.18760966663358397,
+    "NMI": 0.30587310248230204,
+    "AMI": 0.30009301666136684,
+    "Homogeneity": 0.34575797291524096,
+    "V-measure": 0.30587310248230204,
+    "Silhouette": 0.1018844,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 1892,
+    "ARI": 0.17374109885420957,
+    "NMI": 0.30519834567726883,
+    "AMI": 0.2994623811663777,
+    "Homogeneity": 0.3479735779989499,
+    "V-measure": 0.30519834567726883,
+    "Silhouette": 0.10165828,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 1173,
+    "ARI": 0.19640956907917081,
+    "NMI": 0.3189225857808664,
+    "AMI": 0.3132248587075948,
+    "Homogeneity": 0.3573307078798237,
+    "V-measure": 0.31892258578086646,
+    "Silhouette": 0.09468513,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 69,
+    "ARI": 0.1947620258141088,
+    "NMI": 0.3135356298837429,
+    "AMI": 0.30777256720520413,
+    "Homogeneity": 0.35033665139342407,
+    "V-measure": 0.31353562988374284,
+    "Silhouette": 0.09256159,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 2024,
+    "ARI": 0.23640627085787844,
+    "NMI": 0.32972315616039677,
+    "AMI": 0.3240318617984128,
+    "Homogeneity": 0.3637215769669024,
+    "V-measure": 0.3297231561603967,
+    "Silhouette": 0.09814862,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 231,
+    "ARI": 0.19104530364233352,
+    "NMI": 0.30487256438597327,
+    "AMI": 0.29909848301093217,
+    "Homogeneity": 0.34564667728415704,
+    "V-measure": 0.3048725643859733,
+    "Silhouette": 0.09490617,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 1971,
+    "ARI": 0.1748454810917727,
+    "NMI": 0.3059003000204262,
+    "AMI": 0.3001060754926852,
+    "Homogeneity": 0.3435033072719954,
+    "V-measure": 0.30590030002042623,
+    "Silhouette": 0.089619264,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 2497,
+    "ARI": 0.17575677803095482,
+    "NMI": 0.3062423178665656,
+    "AMI": 0.3005609497826837,
+    "Homogeneity": 0.35161189589271863,
+    "V-measure": 0.3062423178665655,
+    "Silhouette": 0.09632387,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 338,
+    "ARI": 0.1830240670861647,
+    "NMI": 0.30716325546507434,
+    "AMI": 0.30136224692828223,
+    "Homogeneity": 0.3442229670911721,
+    "V-measure": 0.3071632554650744,
+    "Silhouette": 0.095578894,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 3127,
+    "ARI": 0.1888027596766646,
+    "NMI": 0.3186828608891374,
+    "AMI": 0.3130889488833119,
+    "Homogeneity": 0.36397242801480884,
+    "V-measure": 0.31868286088913744,
+    "Silhouette": 0.08977245,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 2001,
+    "ARI": 0.16675160876445455,
+    "NMI": 0.31260217013996416,
+    "AMI": 0.307010481788363,
+    "Homogeneity": 0.3596586432501003,
+    "V-measure": 0.3126021701399642,
+    "Silhouette": 0.08929103,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 2022,
+    "ARI": 0.17523740584245173,
+    "NMI": 0.2973169619328297,
+    "AMI": 0.29145008615529155,
+    "Homogeneity": 0.33440333408279693,
+    "V-measure": 0.2973169619328297,
+    "Silhouette": 0.09404711,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 574,
+    "ARI": 0.2108600623423428,
+    "NMI": 0.3207653582955055,
+    "AMI": 0.31504309596147817,
+    "Homogeneity": 0.3572970631394281,
+    "V-measure": 0.32076535829550545,
+    "Silhouette": 0.09626775,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 2428,
+    "ARI": 0.1831936578519552,
+    "NMI": 0.32176412018490214,
+    "AMI": 0.31610868373880885,
+    "Homogeneity": 0.36125907509585087,
+    "V-measure": 0.32176412018490214,
+    "Silhouette": 0.09965902,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 999,
+    "ARI": 0.17857945155580734,
+    "NMI": 0.3120882930615754,
+    "AMI": 0.3064515750890771,
+    "Homogeneity": 0.3578333363151165,
+    "V-measure": 0.3120882930615754,
+    "Silhouette": 0.09299025,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 1187,
+    "ARI": 0.1923916078689053,
+    "NMI": 0.31463218032983337,
+    "AMI": 0.3088997221379796,
+    "Homogeneity": 0.3499488554003169,
+    "V-measure": 0.31463218032983337,
+    "Silhouette": 0.09787486,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 42,
+    "ARI": 0.1892599118397779,
+    "NMI": 0.3151449935844057,
+    "AMI": 0.30944037558286025,
+    "Homogeneity": 0.35279916819263546,
+    "V-measure": 0.3151449935844056,
+    "Silhouette": 0.09552295,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_D1",
+    "seed": 3999,
+    "ARI": 0.20414639630896037,
+    "NMI": 0.3109019981275009,
+    "AMI": 0.3051109557943462,
+    "Homogeneity": 0.3471797267059493,
+    "V-measure": 0.3109019981275009,
+    "Silhouette": 0.10116947,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 13,
+    "ARI": 0.41708212568099967,
+    "NMI": 0.5506070221113846,
+    "AMI": 0.5455572726102037,
+    "Homogeneity": 0.6443309912763466,
+    "V-measure": 0.5506070221113846,
+    "Silhouette": 0.17492977,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 2560,
+    "ARI": 0.37811993752865614,
+    "NMI": 0.5242673783251361,
+    "AMI": 0.5189342345538032,
+    "Homogeneity": 0.6150426345988264,
+    "V-measure": 0.5242673783251361,
+    "Silhouette": 0.1694273,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 641,
+    "ARI": 0.4108483296410674,
+    "NMI": 0.5332183564027226,
+    "AMI": 0.5278972691057457,
+    "Homogeneity": 0.6105162254135728,
+    "V-measure": 0.5332183564027226,
+    "Silhouette": 0.1830278,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 1892,
+    "ARI": 0.4184637631712877,
+    "NMI": 0.5166825443408488,
+    "AMI": 0.5111655675038729,
+    "Homogeneity": 0.5888408440706712,
+    "V-measure": 0.5166825443408488,
+    "Silhouette": 0.17467149,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 1173,
+    "ARI": 0.41725273838849863,
+    "NMI": 0.5256115006413276,
+    "AMI": 0.5202009547315105,
+    "Homogeneity": 0.6006142561515244,
+    "V-measure": 0.5256115006413277,
+    "Silhouette": 0.19023462,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 69,
+    "ARI": 0.451577584496444,
+    "NMI": 0.5490120934676246,
+    "AMI": 0.5438729947050703,
+    "Homogeneity": 0.6288247634328757,
+    "V-measure": 0.5490120934676246,
+    "Silhouette": 0.19108361,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 2024,
+    "ARI": 0.43014209850525725,
+    "NMI": 0.5294216424509925,
+    "AMI": 0.5240540100458846,
+    "Homogeneity": 0.6054908321970686,
+    "V-measure": 0.5294216424509925,
+    "Silhouette": 0.18902856,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 231,
+    "ARI": 0.4119437381646663,
+    "NMI": 0.5376569371680079,
+    "AMI": 0.5324043191195129,
+    "Homogeneity": 0.617995116528984,
+    "V-measure": 0.5376569371680079,
+    "Silhouette": 0.17927286,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 1971,
+    "ARI": 0.362173093559696,
+    "NMI": 0.5248257231261114,
+    "AMI": 0.5195219453616375,
+    "Homogeneity": 0.6190939076159384,
+    "V-measure": 0.5248257231261114,
+    "Silhouette": 0.15273817,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 2497,
+    "ARI": 0.3882970588988221,
+    "NMI": 0.5151564352973891,
+    "AMI": 0.5096747519254027,
+    "Homogeneity": 0.5972039996790164,
+    "V-measure": 0.5151564352973891,
+    "Silhouette": 0.17215152,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 338,
+    "ARI": 0.44078185998604,
+    "NMI": 0.5427885678520454,
+    "AMI": 0.5375758505000835,
+    "Homogeneity": 0.6210574471631143,
+    "V-measure": 0.5427885678520453,
+    "Silhouette": 0.190361,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 3127,
+    "ARI": 0.39914202507799834,
+    "NMI": 0.55347550261413,
+    "AMI": 0.5484518443535688,
+    "Homogeneity": 0.6462151236928297,
+    "V-measure": 0.55347550261413,
+    "Silhouette": 0.17218475,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 2001,
+    "ARI": 0.43695039624597265,
+    "NMI": 0.530295084256847,
+    "AMI": 0.5249523085769363,
+    "Homogeneity": 0.6087990869103291,
+    "V-measure": 0.5302950842568471,
+    "Silhouette": 0.17947416,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 2022,
+    "ARI": 0.4203392644779429,
+    "NMI": 0.5464982859215901,
+    "AMI": 0.5413888626793752,
+    "Homogeneity": 0.6351869238725734,
+    "V-measure": 0.5464982859215902,
+    "Silhouette": 0.16152053,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 574,
+    "ARI": 0.4239316780640468,
+    "NMI": 0.5466046352726306,
+    "AMI": 0.541489348951864,
+    "Homogeneity": 0.634368566713653,
+    "V-measure": 0.5466046352726306,
+    "Silhouette": 0.16923174,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 2428,
+    "ARI": 0.3835276296713308,
+    "NMI": 0.5259382838823277,
+    "AMI": 0.520585766941731,
+    "Homogeneity": 0.6101292617233265,
+    "V-measure": 0.5259382838823278,
+    "Silhouette": 0.1719465,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 999,
+    "ARI": 0.4071881426765093,
+    "NMI": 0.5587005495398835,
+    "AMI": 0.553749824795335,
+    "Homogeneity": 0.6547412498669948,
+    "V-measure": 0.5587005495398835,
+    "Silhouette": 0.17206028,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 1187,
+    "ARI": 0.36551363991163066,
+    "NMI": 0.5114766067481376,
+    "AMI": 0.5060206234878982,
+    "Homogeneity": 0.6036749623689754,
+    "V-measure": 0.5114766067481376,
+    "Silhouette": 0.1633604,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 42,
+    "ARI": 0.3555174167804167,
+    "NMI": 0.5231193891913922,
+    "AMI": 0.517801072902545,
+    "Homogeneity": 0.6179844583652591,
+    "V-measure": 0.5231193891913921,
+    "Silhouette": 0.16133536,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E11_S1",
+    "seed": 3999,
+    "ARI": 0.36859270222680035,
+    "NMI": 0.5259127810292578,
+    "AMI": 0.5206175697586665,
+    "Homogeneity": 0.6198952253632416,
+    "V-measure": 0.5259127810292576,
+    "Silhouette": 0.17132694,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 13,
+    "ARI": 0.182490573360223,
+    "NMI": 0.3836336465512296,
+    "AMI": 0.37358195618180046,
+    "Homogeneity": 0.4768224891250002,
+    "V-measure": 0.3836336465512296,
+    "Silhouette": 0.083300985,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 2560,
+    "ARI": 0.22141073308412834,
+    "NMI": 0.4113152882655472,
+    "AMI": 0.40167361453373834,
+    "Homogeneity": 0.5072624058271056,
+    "V-measure": 0.41131528826554714,
+    "Silhouette": 0.097211845,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 641,
+    "ARI": 0.17744914173178433,
+    "NMI": 0.3716515800048524,
+    "AMI": 0.3613725874163725,
+    "Homogeneity": 0.4593890671418269,
+    "V-measure": 0.3716515800048524,
+    "Silhouette": 0.08997314,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 1892,
+    "ARI": 0.16756167572041544,
+    "NMI": 0.37335209039618183,
+    "AMI": 0.36311933016737213,
+    "Homogeneity": 0.4629356318134473,
+    "V-measure": 0.3733520903961819,
+    "Silhouette": 0.09473401,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 1173,
+    "ARI": 0.18724643668448818,
+    "NMI": 0.37866375612512104,
+    "AMI": 0.36845678074664906,
+    "Homogeneity": 0.4639115097535845,
+    "V-measure": 0.378663756125121,
+    "Silhouette": 0.094696164,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 69,
+    "ARI": 0.1615565866957149,
+    "NMI": 0.3464523995508307,
+    "AMI": 0.33569839310719907,
+    "Homogeneity": 0.4244761200229008,
+    "V-measure": 0.3464523995508307,
+    "Silhouette": 0.093017034,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 2024,
+    "ARI": 0.19186956432824084,
+    "NMI": 0.37834570793420064,
+    "AMI": 0.36813255855748434,
+    "Homogeneity": 0.46449690081977235,
+    "V-measure": 0.37834570793420075,
+    "Silhouette": 0.10490298,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 231,
+    "ARI": 0.18824864458316737,
+    "NMI": 0.40313064339302546,
+    "AMI": 0.3933819358123181,
+    "Homogeneity": 0.5000107917091736,
+    "V-measure": 0.40313064339302546,
+    "Silhouette": 0.09480989,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 1971,
+    "ARI": 0.1819614923829159,
+    "NMI": 0.37766949294289426,
+    "AMI": 0.36752222664030976,
+    "Homogeneity": 0.46954236694420604,
+    "V-measure": 0.3776694929428942,
+    "Silhouette": 0.09792063,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 2497,
+    "ARI": 0.16727602634098618,
+    "NMI": 0.35655349486536314,
+    "AMI": 0.34604087722854543,
+    "Homogeneity": 0.4418775297168335,
+    "V-measure": 0.3565534948653631,
+    "Silhouette": 0.09500355,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 338,
+    "ARI": 0.17606901001741854,
+    "NMI": 0.3715195739865763,
+    "AMI": 0.3612433642339106,
+    "Homogeneity": 0.45964995239328316,
+    "V-measure": 0.3715195739865764,
+    "Silhouette": 0.094809204,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 3127,
+    "ARI": 0.20813586487990557,
+    "NMI": 0.3948427012709055,
+    "AMI": 0.38494925452858386,
+    "Homogeneity": 0.48871331816745295,
+    "V-measure": 0.3948427012709056,
+    "Silhouette": 0.0889873,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 2001,
+    "ARI": 0.18645324718497414,
+    "NMI": 0.38952381935529223,
+    "AMI": 0.3795560938571747,
+    "Homogeneity": 0.48314369732190626,
+    "V-measure": 0.38952381935529223,
+    "Silhouette": 0.08957062,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 2022,
+    "ARI": 0.19024792601723925,
+    "NMI": 0.38337735976234605,
+    "AMI": 0.37327552006130255,
+    "Homogeneity": 0.47305749665933755,
+    "V-measure": 0.383377359762346,
+    "Silhouette": 0.09960082,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 574,
+    "ARI": 0.16728033821308813,
+    "NMI": 0.3756007044588912,
+    "AMI": 0.36539303542806434,
+    "Homogeneity": 0.4642639504851629,
+    "V-measure": 0.3756007044588912,
+    "Silhouette": 0.10075982,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 2428,
+    "ARI": 0.1714848104326024,
+    "NMI": 0.3741459935661742,
+    "AMI": 0.3639440940730536,
+    "Homogeneity": 0.4653800276732243,
+    "V-measure": 0.3741459935661741,
+    "Silhouette": 0.08875834,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 999,
+    "ARI": 0.16720375219053854,
+    "NMI": 0.3668550887922567,
+    "AMI": 0.35648003872524864,
+    "Homogeneity": 0.45195622249442513,
+    "V-measure": 0.3668550887922567,
+    "Silhouette": 0.0917246,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 1187,
+    "ARI": 0.18696728861613443,
+    "NMI": 0.38590559797723134,
+    "AMI": 0.37588858204657055,
+    "Homogeneity": 0.47941649665980834,
+    "V-measure": 0.3859055979772313,
+    "Silhouette": 0.08656579,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 42,
+    "ARI": 0.16277252611107776,
+    "NMI": 0.36027633659762254,
+    "AMI": 0.34985366161074805,
+    "Homogeneity": 0.4485208589818289,
+    "V-measure": 0.3602763365976224,
+    "Silhouette": 0.08528715,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E13_S1",
+    "seed": 3999,
+    "ARI": 0.18253612207544073,
+    "NMI": 0.38369741797753454,
+    "AMI": 0.373634296305855,
+    "Homogeneity": 0.47570380401243445,
+    "V-measure": 0.38369741797753454,
+    "Silhouette": 0.09204791,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 13,
+    "ARI": 0.5606718781581361,
+    "NMI": 0.5631525676412705,
+    "AMI": 0.556532361669105,
+    "Homogeneity": 0.5773969591618623,
+    "V-measure": 0.5631525676412705,
+    "Silhouette": 0.16976775,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 2560,
+    "ARI": 0.6154093771187207,
+    "NMI": 0.5996606728893806,
+    "AMI": 0.5936479653998026,
+    "Homogeneity": 0.6204429773501026,
+    "V-measure": 0.5996606728893806,
+    "Silhouette": 0.15226188,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 641,
+    "ARI": 0.5724292162437099,
+    "NMI": 0.5721547570041542,
+    "AMI": 0.5656646818728134,
+    "Homogeneity": 0.5859455742231932,
+    "V-measure": 0.5721547570041543,
+    "Silhouette": 0.16962335,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 1892,
+    "ARI": 0.543003273982441,
+    "NMI": 0.5642473821574847,
+    "AMI": 0.5578096355530648,
+    "Homogeneity": 0.5925099610435778,
+    "V-measure": 0.5642473821574848,
+    "Silhouette": 0.12677431,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 1173,
+    "ARI": 0.4199998601372361,
+    "NMI": 0.5324615166783612,
+    "AMI": 0.5254830592574556,
+    "Homogeneity": 0.5548115518152916,
+    "V-measure": 0.5324615166783613,
+    "Silhouette": 0.13354973,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 69,
+    "ARI": 0.5983532431186858,
+    "NMI": 0.5941025015476373,
+    "AMI": 0.587961590352161,
+    "Homogeneity": 0.6102373661296059,
+    "V-measure": 0.5941025015476372,
+    "Silhouette": 0.16912429,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 2024,
+    "ARI": 0.38386338891206107,
+    "NMI": 0.5233150407442979,
+    "AMI": 0.5162178119234544,
+    "Homogeneity": 0.5469692324820334,
+    "V-measure": 0.523315040744298,
+    "Silhouette": 0.11798963,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 231,
+    "ARI": 0.60888046951569,
+    "NMI": 0.5966158385348116,
+    "AMI": 0.5905595200889316,
+    "Homogeneity": 0.6176566494240224,
+    "V-measure": 0.5966158385348115,
+    "Silhouette": 0.14870848,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 1971,
+    "ARI": 0.5731503611325522,
+    "NMI": 0.5817817981825671,
+    "AMI": 0.5754267786119844,
+    "Homogeneity": 0.5962487544264921,
+    "V-measure": 0.5817817981825673,
+    "Silhouette": 0.17159164,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 2497,
+    "ARI": 0.5318329936375861,
+    "NMI": 0.5506894925157738,
+    "AMI": 0.5437712962375442,
+    "Homogeneity": 0.55728928274899,
+    "V-measure": 0.5506894925157738,
+    "Silhouette": 0.1834414,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 338,
+    "ARI": 0.5329485560508511,
+    "NMI": 0.5457581981625743,
+    "AMI": 0.5387773203836249,
+    "Homogeneity": 0.5532171604493493,
+    "V-measure": 0.5457581981625742,
+    "Silhouette": 0.18579315,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 3127,
+    "ARI": 0.5958009782943473,
+    "NMI": 0.5973917494903117,
+    "AMI": 0.5912994728305749,
+    "Homogeneity": 0.6135215958576234,
+    "V-measure": 0.5973917494903116,
+    "Silhouette": 0.17200238,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 2001,
+    "ARI": 0.5845718192219171,
+    "NMI": 0.5949218882562793,
+    "AMI": 0.588795499825463,
+    "Homogeneity": 0.6111256127807956,
+    "V-measure": 0.5949218882562792,
+    "Silhouette": 0.1682718,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 2022,
+    "ARI": 0.518385035569018,
+    "NMI": 0.549211850210407,
+    "AMI": 0.5422148898307678,
+    "Homogeneity": 0.5516967840694741,
+    "V-measure": 0.5492118502104069,
+    "Silhouette": 0.184331,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 574,
+    "ARI": 0.5743485960237601,
+    "NMI": 0.5761390211031745,
+    "AMI": 0.5696937724951201,
+    "Homogeneity": 0.5891974676687725,
+    "V-measure": 0.5761390211031746,
+    "Silhouette": 0.17275004,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 2428,
+    "ARI": 0.5783154012960148,
+    "NMI": 0.5822928681721976,
+    "AMI": 0.575928984494806,
+    "Homogeneity": 0.5951138817372529,
+    "V-measure": 0.5822928681721976,
+    "Silhouette": 0.16206507,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 999,
+    "ARI": 0.5263740304315407,
+    "NMI": 0.5441408375735443,
+    "AMI": 0.5370912044372266,
+    "Homogeneity": 0.5488072857586264,
+    "V-measure": 0.5441408375735443,
+    "Silhouette": 0.179569,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 1187,
+    "ARI": 0.6276320042052207,
+    "NMI": 0.615002796195538,
+    "AMI": 0.6092133171188314,
+    "Homogeneity": 0.6362545311095995,
+    "V-measure": 0.6150027961955379,
+    "Silhouette": 0.14511137,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 42,
+    "ARI": 0.6006883855566812,
+    "NMI": 0.5873477797674679,
+    "AMI": 0.5811575724624856,
+    "Homogeneity": 0.6088276941465582,
+    "V-measure": 0.5873477797674679,
+    "Silhouette": 0.14093396,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E15_S1",
+    "seed": 3999,
+    "ARI": 0.37935068805443006,
+    "NMI": 0.5312453550076858,
+    "AMI": 0.5243013962147494,
+    "Homogeneity": 0.5574912724026533,
+    "V-measure": 0.5312453550076858,
+    "Silhouette": 0.117785916,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 13,
+    "ARI": 0.3397012126715143,
+    "NMI": 0.5525844629947495,
+    "AMI": 0.544543256840246,
+    "Homogeneity": 0.5996851288404981,
+    "V-measure": 0.5525844629947496,
+    "Silhouette": 0.09999852,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 2560,
+    "ARI": 0.2929327999820879,
+    "NMI": 0.5228785788336884,
+    "AMI": 0.5143982896234782,
+    "Homogeneity": 0.5760084422593041,
+    "V-measure": 0.5228785788336885,
+    "Silhouette": 0.1087204,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 641,
+    "ARI": 0.2922347719450821,
+    "NMI": 0.5241068897507074,
+    "AMI": 0.515606026714071,
+    "Homogeneity": 0.5735561660657673,
+    "V-measure": 0.5241068897507073,
+    "Silhouette": 0.10858535,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 1892,
+    "ARI": 0.3017261794311868,
+    "NMI": 0.5410392023876116,
+    "AMI": 0.5328769224888811,
+    "Homogeneity": 0.5964613929215246,
+    "V-measure": 0.5410392023876115,
+    "Silhouette": 0.098562196,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 1173,
+    "ARI": 0.31848805822892523,
+    "NMI": 0.5349698299791494,
+    "AMI": 0.526675947339818,
+    "Homogeneity": 0.5872504839054475,
+    "V-measure": 0.5349698299791493,
+    "Silhouette": 0.103239276,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 69,
+    "ARI": 0.3196349918839061,
+    "NMI": 0.5371133282192531,
+    "AMI": 0.528907099106225,
+    "Homogeneity": 0.5942407215877892,
+    "V-measure": 0.5371133282192531,
+    "Silhouette": 0.10800353,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 2024,
+    "ARI": 0.2807190530982393,
+    "NMI": 0.5153335617500056,
+    "AMI": 0.5066890813815089,
+    "Homogeneity": 0.5658781747837003,
+    "V-measure": 0.5153335617500057,
+    "Silhouette": 0.0926475,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 231,
+    "ARI": 0.3388486093339772,
+    "NMI": 0.5440516629074427,
+    "AMI": 0.5358833338505841,
+    "Homogeneity": 0.5933485080100884,
+    "V-measure": 0.5440516629074427,
+    "Silhouette": 0.10515252,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 1971,
+    "ARI": 0.3046363242463937,
+    "NMI": 0.523102321993614,
+    "AMI": 0.5145697175436916,
+    "Homogeneity": 0.5718270112206345,
+    "V-measure": 0.523102321993614,
+    "Silhouette": 0.101264305,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 2497,
+    "ARI": 0.32082966933730367,
+    "NMI": 0.5408669391874011,
+    "AMI": 0.5326667722203521,
+    "Homogeneity": 0.5929627261973021,
+    "V-measure": 0.5408669391874011,
+    "Silhouette": 0.10156132,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 338,
+    "ARI": 0.30703277255037537,
+    "NMI": 0.5253394382899911,
+    "AMI": 0.516876231739704,
+    "Homogeneity": 0.5764778658603553,
+    "V-measure": 0.525339438289991,
+    "Silhouette": 0.106199,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 3127,
+    "ARI": 0.3167676189522093,
+    "NMI": 0.5394014135875236,
+    "AMI": 0.5311702289817453,
+    "Homogeneity": 0.5911331104634954,
+    "V-measure": 0.5394014135875236,
+    "Silhouette": 0.0995777,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 2001,
+    "ARI": 0.3054683585631885,
+    "NMI": 0.5199588304343744,
+    "AMI": 0.5114044403117594,
+    "Homogeneity": 0.5710885765869466,
+    "V-measure": 0.5199588304343744,
+    "Silhouette": 0.104802065,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 2022,
+    "ARI": 0.34843484844527756,
+    "NMI": 0.5481750072709564,
+    "AMI": 0.5401212137434693,
+    "Homogeneity": 0.6019934405856776,
+    "V-measure": 0.5481750072709562,
+    "Silhouette": 0.10632718,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 574,
+    "ARI": 0.3034500323912249,
+    "NMI": 0.5296516266835024,
+    "AMI": 0.521289334895561,
+    "Homogeneity": 0.5842168478752146,
+    "V-measure": 0.5296516266835024,
+    "Silhouette": 0.10670238,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 2428,
+    "ARI": 0.30043050401494953,
+    "NMI": 0.5314158939704643,
+    "AMI": 0.523072173724283,
+    "Homogeneity": 0.584845329184036,
+    "V-measure": 0.5314158939704644,
+    "Silhouette": 0.0991733,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 999,
+    "ARI": 0.32111202478902656,
+    "NMI": 0.5366344458067287,
+    "AMI": 0.528367520224916,
+    "Homogeneity": 0.5887172921236761,
+    "V-measure": 0.5366344458067287,
+    "Silhouette": 0.10252275,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 1187,
+    "ARI": 0.31338243056350484,
+    "NMI": 0.5184701803527616,
+    "AMI": 0.5098815337060874,
+    "Homogeneity": 0.568848089084569,
+    "V-measure": 0.5184701803527617,
+    "Silhouette": 0.10248636,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 42,
+    "ARI": 0.3441322506781441,
+    "NMI": 0.5480153789444764,
+    "AMI": 0.5399416759237662,
+    "Homogeneity": 0.5995253072168629,
+    "V-measure": 0.5480153789444763,
+    "Silhouette": 0.10870138,
+    "model": "Arise"
+  },
+  {
+    "dataset": "Mouse_Brain_E18_S1",
+    "seed": 3999,
+    "ARI": 0.28695528004532495,
+    "NMI": 0.5244856500836751,
+    "AMI": 0.5160191181503277,
+    "Homogeneity": 0.577471452295162,
+    "V-measure": 0.5244856500836751,
+    "Silhouette": 0.094864406,
+    "model": "Arise"
+  },
+  {
+    "dataset": "10x_human_lymph_node_A1",
+    "seed": 13,
     "ARI": 0.3362646843302983,
     "NMI": 0.4135731916829169,
     "AMI": 0.40943249678718713,
     "Homogeneity": 0.4175717976081376,
     "V-measure": 0.4135731916829169,
     "Silhouette": 0.26758325,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2660,7 +3980,7 @@ window.fallbackData = [
     "Homogeneity": 0.41119323240962863,
     "V-measure": 0.4146609418082655,
     "Silhouette": 0.26945812,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2671,7 +3991,7 @@ window.fallbackData = [
     "Homogeneity": 0.4157566661629299,
     "V-measure": 0.4102570742559247,
     "Silhouette": 0.26785538,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2682,7 +4002,7 @@ window.fallbackData = [
     "Homogeneity": 0.41209556287093807,
     "V-measure": 0.4120794730420141,
     "Silhouette": 0.26640067,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2693,7 +4013,7 @@ window.fallbackData = [
     "Homogeneity": 0.40666965662121635,
     "V-measure": 0.40782581907794657,
     "Silhouette": 0.2638916,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2704,7 +4024,7 @@ window.fallbackData = [
     "Homogeneity": 0.4099890769939022,
     "V-measure": 0.4023230885803882,
     "Silhouette": 0.24970631,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2715,7 +4035,7 @@ window.fallbackData = [
     "Homogeneity": 0.4140287282882145,
     "V-measure": 0.4060925271825868,
     "Silhouette": 0.26553687,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2726,7 +4046,7 @@ window.fallbackData = [
     "Homogeneity": 0.40416427600778576,
     "V-measure": 0.38847715809313577,
     "Silhouette": 0.26064232,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2737,7 +4057,7 @@ window.fallbackData = [
     "Homogeneity": 0.4193097177775157,
     "V-measure": 0.41269268593575487,
     "Silhouette": 0.26391685,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2748,7 +4068,7 @@ window.fallbackData = [
     "Homogeneity": 0.4211376683775188,
     "V-measure": 0.41259539755373875,
     "Silhouette": 0.2615043,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2759,7 +4079,7 @@ window.fallbackData = [
     "Homogeneity": 0.4149910877583753,
     "V-measure": 0.4106506849111475,
     "Silhouette": 0.25919086,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2770,7 +4090,7 @@ window.fallbackData = [
     "Homogeneity": 0.4079964201204203,
     "V-measure": 0.39840824711452016,
     "Silhouette": 0.24841705,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2781,7 +4101,7 @@ window.fallbackData = [
     "Homogeneity": 0.41689755710775034,
     "V-measure": 0.40864275211340895,
     "Silhouette": 0.25763115,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2792,7 +4112,7 @@ window.fallbackData = [
     "Homogeneity": 0.4093819843147265,
     "V-measure": 0.4133655922367406,
     "Silhouette": 0.27373353,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2803,7 +4123,7 @@ window.fallbackData = [
     "Homogeneity": 0.41882030977192464,
     "V-measure": 0.41229983212816523,
     "Silhouette": 0.25400367,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2814,7 +4134,7 @@ window.fallbackData = [
     "Homogeneity": 0.40372617654933246,
     "V-measure": 0.3851983323488915,
     "Silhouette": 0.2573185,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2825,7 +4145,7 @@ window.fallbackData = [
     "Homogeneity": 0.410304879318147,
     "V-measure": 0.4147044255362851,
     "Silhouette": 0.27052578,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2836,7 +4156,7 @@ window.fallbackData = [
     "Homogeneity": 0.4078331036915083,
     "V-measure": 0.41227122230006413,
     "Silhouette": 0.25046882,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2847,7 +4167,7 @@ window.fallbackData = [
     "Homogeneity": 0.413546856054249,
     "V-measure": 0.4178197675012414,
     "Silhouette": 0.26961055,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -2858,7 +4178,7 @@ window.fallbackData = [
     "Homogeneity": 0.41529653140605,
     "V-measure": 0.41982131444122706,
     "Silhouette": 0.2567035,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2869,7 +4189,7 @@ window.fallbackData = [
     "Homogeneity": 0.39132172679229554,
     "V-measure": 0.35157715045903415,
     "Silhouette": 0.21337168,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2880,7 +4200,7 @@ window.fallbackData = [
     "Homogeneity": 0.381894709476968,
     "V-measure": 0.3476736712253911,
     "Silhouette": 0.21701594,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2891,7 +4211,7 @@ window.fallbackData = [
     "Homogeneity": 0.39224359440965634,
     "V-measure": 0.3563839882167554,
     "Silhouette": 0.2227592,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2902,7 +4222,7 @@ window.fallbackData = [
     "Homogeneity": 0.3894254276990257,
     "V-measure": 0.359214444137114,
     "Silhouette": 0.22655715,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2913,7 +4233,7 @@ window.fallbackData = [
     "Homogeneity": 0.3924318657415211,
     "V-measure": 0.36236509912536125,
     "Silhouette": 0.21793701,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2924,7 +4244,7 @@ window.fallbackData = [
     "Homogeneity": 0.4008327136488092,
     "V-measure": 0.3597914328286155,
     "Silhouette": 0.2048106,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2935,7 +4255,7 @@ window.fallbackData = [
     "Homogeneity": 0.39819669836837823,
     "V-measure": 0.35980402390543537,
     "Silhouette": 0.21185772,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2946,7 +4266,7 @@ window.fallbackData = [
     "Homogeneity": 0.3970401467859259,
     "V-measure": 0.35597376556781307,
     "Silhouette": 0.21032439,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2957,7 +4277,7 @@ window.fallbackData = [
     "Homogeneity": 0.3987181852027289,
     "V-measure": 0.36215059238392167,
     "Silhouette": 0.21017846,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2968,7 +4288,7 @@ window.fallbackData = [
     "Homogeneity": 0.38601833043793804,
     "V-measure": 0.36649687849023643,
     "Silhouette": 0.23921329,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2979,7 +4299,7 @@ window.fallbackData = [
     "Homogeneity": 0.3856861217176986,
     "V-measure": 0.36070378419378074,
     "Silhouette": 0.2119988,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -2990,7 +4310,7 @@ window.fallbackData = [
     "Homogeneity": 0.4057458087530309,
     "V-measure": 0.3673494779469371,
     "Silhouette": 0.21915275,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -3001,7 +4321,7 @@ window.fallbackData = [
     "Homogeneity": 0.3938625038395496,
     "V-measure": 0.3521897199535034,
     "Silhouette": 0.20186214,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -3012,7 +4332,7 @@ window.fallbackData = [
     "Homogeneity": 0.3958675634843775,
     "V-measure": 0.3631273676042948,
     "Silhouette": 0.21855192,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -3023,7 +4343,7 @@ window.fallbackData = [
     "Homogeneity": 0.38749760006134937,
     "V-measure": 0.3551213014877105,
     "Silhouette": 0.21291883,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -3034,7 +4354,7 @@ window.fallbackData = [
     "Homogeneity": 0.39690617731156774,
     "V-measure": 0.35743776178680653,
     "Silhouette": 0.2128867,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -3045,7 +4365,7 @@ window.fallbackData = [
     "Homogeneity": 0.39460915113837886,
     "V-measure": 0.36812398583972405,
     "Silhouette": 0.1983273,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -3056,7 +4376,7 @@ window.fallbackData = [
     "Homogeneity": 0.3977331517843908,
     "V-measure": 0.3557136049885519,
     "Silhouette": 0.21429652,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -3067,7 +4387,7 @@ window.fallbackData = [
     "Homogeneity": 0.40020477951752836,
     "V-measure": 0.3579809887051042,
     "Silhouette": 0.21414377,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_D1",
@@ -3078,7 +4398,7 @@ window.fallbackData = [
     "Homogeneity": 0.39011309661659455,
     "V-measure": 0.35339688390328083,
     "Silhouette": 0.20704383,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3089,7 +4409,7 @@ window.fallbackData = [
     "Homogeneity": 0.6371915765852482,
     "V-measure": 0.5564300933166564,
     "Silhouette": 0.19533673,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3100,7 +4420,7 @@ window.fallbackData = [
     "Homogeneity": 0.6317105382472857,
     "V-measure": 0.5492955305241148,
     "Silhouette": 0.19134629,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3111,7 +4431,7 @@ window.fallbackData = [
     "Homogeneity": 0.6561325135383882,
     "V-measure": 0.5745643851615406,
     "Silhouette": 0.20425212,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3122,7 +4442,7 @@ window.fallbackData = [
     "Homogeneity": 0.6602834222839503,
     "V-measure": 0.5777511846239538,
     "Silhouette": 0.19288673,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3133,7 +4453,7 @@ window.fallbackData = [
     "Homogeneity": 0.6595019261386669,
     "V-measure": 0.5745730175744789,
     "Silhouette": 0.2047226,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3144,7 +4464,7 @@ window.fallbackData = [
     "Homogeneity": 0.6555621019691791,
     "V-measure": 0.5704782149940963,
     "Silhouette": 0.20894806,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3155,7 +4475,7 @@ window.fallbackData = [
     "Homogeneity": 0.6094489623730042,
     "V-measure": 0.5320178533153069,
     "Silhouette": 0.20316932,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3166,7 +4486,7 @@ window.fallbackData = [
     "Homogeneity": 0.6533142242781331,
     "V-measure": 0.5716458546378145,
     "Silhouette": 0.19683892,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3177,7 +4497,7 @@ window.fallbackData = [
     "Homogeneity": 0.6748086544032994,
     "V-measure": 0.5729501551283334,
     "Silhouette": 0.17839636,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3188,7 +4508,7 @@ window.fallbackData = [
     "Homogeneity": 0.6083857415801456,
     "V-measure": 0.5307230663503988,
     "Silhouette": 0.1899849,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3199,7 +4519,7 @@ window.fallbackData = [
     "Homogeneity": 0.6725765280319291,
     "V-measure": 0.5884615405242292,
     "Silhouette": 0.20428552,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3210,7 +4530,7 @@ window.fallbackData = [
     "Homogeneity": 0.6269462655918585,
     "V-measure": 0.5479773525980123,
     "Silhouette": 0.1945365,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3221,7 +4541,7 @@ window.fallbackData = [
     "Homogeneity": 0.6220830617870458,
     "V-measure": 0.5422845249276862,
     "Silhouette": 0.19260174,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3232,7 +4552,7 @@ window.fallbackData = [
     "Homogeneity": 0.6612457290062557,
     "V-measure": 0.5744997042563659,
     "Silhouette": 0.19726504,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3243,7 +4563,7 @@ window.fallbackData = [
     "Homogeneity": 0.6532598505963285,
     "V-measure": 0.5658206967694065,
     "Silhouette": 0.20231792,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3254,7 +4574,7 @@ window.fallbackData = [
     "Homogeneity": 0.607402138106272,
     "V-measure": 0.535230315909923,
     "Silhouette": 0.18995926,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3265,7 +4585,7 @@ window.fallbackData = [
     "Homogeneity": 0.6211556176775688,
     "V-measure": 0.5374164145458072,
     "Silhouette": 0.18714654,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3276,7 +4596,7 @@ window.fallbackData = [
     "Homogeneity": 0.6093291455174235,
     "V-measure": 0.5283522563073544,
     "Silhouette": 0.18362936,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3287,7 +4607,7 @@ window.fallbackData = [
     "Homogeneity": 0.6616560725684595,
     "V-measure": 0.5727279599276945,
     "Silhouette": 0.19075212,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E11_S1",
@@ -3298,7 +4618,7 @@ window.fallbackData = [
     "Homogeneity": 0.6071027683492626,
     "V-measure": 0.529780506386514,
     "Silhouette": 0.19971874,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3309,7 +4629,7 @@ window.fallbackData = [
     "Homogeneity": 0.5332218438512846,
     "V-measure": 0.4416468073378742,
     "Silhouette": 0.1339689,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3320,7 +4640,7 @@ window.fallbackData = [
     "Homogeneity": 0.5255990368518314,
     "V-measure": 0.43636778278705424,
     "Silhouette": 0.12817165,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3331,7 +4651,7 @@ window.fallbackData = [
     "Homogeneity": 0.5237827130593328,
     "V-measure": 0.43630359756125753,
     "Silhouette": 0.13276045,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3342,7 +4662,7 @@ window.fallbackData = [
     "Homogeneity": 0.5568259700758905,
     "V-measure": 0.4662520688382404,
     "Silhouette": 0.13803048,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3353,7 +4673,7 @@ window.fallbackData = [
     "Homogeneity": 0.5392678419439207,
     "V-measure": 0.45078524031481704,
     "Silhouette": 0.13369992,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3364,7 +4684,7 @@ window.fallbackData = [
     "Homogeneity": 0.5630508926534328,
     "V-measure": 0.4756889557097083,
     "Silhouette": 0.13109393,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3375,7 +4695,7 @@ window.fallbackData = [
     "Homogeneity": 0.546616788292111,
     "V-measure": 0.4565351989967237,
     "Silhouette": 0.13605557,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3386,7 +4706,7 @@ window.fallbackData = [
     "Homogeneity": 0.5110814221550406,
     "V-measure": 0.42274537468518875,
     "Silhouette": 0.13325873,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3397,7 +4717,7 @@ window.fallbackData = [
     "Homogeneity": 0.5213147760075917,
     "V-measure": 0.4332493400792151,
     "Silhouette": 0.13719052,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3408,7 +4728,7 @@ window.fallbackData = [
     "Homogeneity": 0.532307265325218,
     "V-measure": 0.45283320428281154,
     "Silhouette": 0.1331328,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3419,7 +4739,7 @@ window.fallbackData = [
     "Homogeneity": 0.5081798461173669,
     "V-measure": 0.4200260244244593,
     "Silhouette": 0.1294062,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3430,7 +4750,7 @@ window.fallbackData = [
     "Homogeneity": 0.5284420391684695,
     "V-measure": 0.4372103031223568,
     "Silhouette": 0.12868485,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3441,7 +4761,7 @@ window.fallbackData = [
     "Homogeneity": 0.5264613502578501,
     "V-measure": 0.4427055985626728,
     "Silhouette": 0.13196822,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3452,7 +4772,7 @@ window.fallbackData = [
     "Homogeneity": 0.5435519833227973,
     "V-measure": 0.45300545343341353,
     "Silhouette": 0.12665455,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3463,7 +4783,7 @@ window.fallbackData = [
     "Homogeneity": 0.5291299477173735,
     "V-measure": 0.4420854385245268,
     "Silhouette": 0.13747473,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3474,7 +4794,7 @@ window.fallbackData = [
     "Homogeneity": 0.5379159974722199,
     "V-measure": 0.44955989277883707,
     "Silhouette": 0.12684307,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3485,7 +4805,7 @@ window.fallbackData = [
     "Homogeneity": 0.5390960794974965,
     "V-measure": 0.45046082844391433,
     "Silhouette": 0.12528895,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3496,7 +4816,7 @@ window.fallbackData = [
     "Homogeneity": 0.5434169677735621,
     "V-measure": 0.4564288137875387,
     "Silhouette": 0.1355104,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3507,7 +4827,7 @@ window.fallbackData = [
     "Homogeneity": 0.5494706874568369,
     "V-measure": 0.4644397485043327,
     "Silhouette": 0.14078917,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E13_S1",
@@ -3518,7 +4838,7 @@ window.fallbackData = [
     "Homogeneity": 0.5465820454361499,
     "V-measure": 0.45525711246067496,
     "Silhouette": 0.13468039,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3529,7 +4849,7 @@ window.fallbackData = [
     "Homogeneity": 0.5924356109522714,
     "V-measure": 0.5952632281176161,
     "Silhouette": 0.20015682,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3540,7 +4860,7 @@ window.fallbackData = [
     "Homogeneity": 0.6114137491084691,
     "V-measure": 0.6008799405030224,
     "Silhouette": 0.21282068,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3551,7 +4871,7 @@ window.fallbackData = [
     "Homogeneity": 0.6248473038657132,
     "V-measure": 0.6086727330258829,
     "Silhouette": 0.20369768,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3562,7 +4882,7 @@ window.fallbackData = [
     "Homogeneity": 0.6219278650912345,
     "V-measure": 0.607485316918291,
     "Silhouette": 0.21463253,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3573,7 +4893,7 @@ window.fallbackData = [
     "Homogeneity": 0.608724438797199,
     "V-measure": 0.5985485950812515,
     "Silhouette": 0.21155387,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3584,7 +4904,7 @@ window.fallbackData = [
     "Homogeneity": 0.5784523039467887,
     "V-measure": 0.5745862777371665,
     "Silhouette": 0.21343663,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3595,7 +4915,7 @@ window.fallbackData = [
     "Homogeneity": 0.6106075989730385,
     "V-measure": 0.5959296621302225,
     "Silhouette": 0.20216855,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3606,7 +4926,7 @@ window.fallbackData = [
     "Homogeneity": 0.604678923111768,
     "V-measure": 0.6019073671768718,
     "Silhouette": 0.21336542,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3617,7 +4937,7 @@ window.fallbackData = [
     "Homogeneity": 0.6004144686764338,
     "V-measure": 0.58864003822471,
     "Silhouette": 0.21133956,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3628,7 +4948,7 @@ window.fallbackData = [
     "Homogeneity": 0.592969108052813,
     "V-measure": 0.5814390172786332,
     "Silhouette": 0.20853226,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3639,7 +4959,7 @@ window.fallbackData = [
     "Homogeneity": 0.6020328730826333,
     "V-measure": 0.5963667776919237,
     "Silhouette": 0.20583619,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3650,7 +4970,7 @@ window.fallbackData = [
     "Homogeneity": 0.5672782976424078,
     "V-measure": 0.5648413971964364,
     "Silhouette": 0.20264931,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3661,7 +4981,7 @@ window.fallbackData = [
     "Homogeneity": 0.6117975839443928,
     "V-measure": 0.6169229156396977,
     "Silhouette": 0.21506028,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3672,7 +4992,7 @@ window.fallbackData = [
     "Homogeneity": 0.6082046459506995,
     "V-measure": 0.6067705735364635,
     "Silhouette": 0.21508692,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3683,7 +5003,7 @@ window.fallbackData = [
     "Homogeneity": 0.5941794988681489,
     "V-measure": 0.585340621302424,
     "Silhouette": 0.20581308,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3694,7 +5014,7 @@ window.fallbackData = [
     "Homogeneity": 0.6052381186112642,
     "V-measure": 0.5949418603456361,
     "Silhouette": 0.2043202,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3705,7 +5025,7 @@ window.fallbackData = [
     "Homogeneity": 0.6181053190680413,
     "V-measure": 0.6072292266888684,
     "Silhouette": 0.21562561,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3716,7 +5036,7 @@ window.fallbackData = [
     "Homogeneity": 0.609315600326157,
     "V-measure": 0.6116311009069689,
     "Silhouette": 0.2184584,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3727,7 +5047,7 @@ window.fallbackData = [
     "Homogeneity": 0.603107416448756,
     "V-measure": 0.5975888751202442,
     "Silhouette": 0.20530717,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E15_S1",
@@ -3738,7 +5058,7 @@ window.fallbackData = [
     "Homogeneity": 0.5970980597173248,
     "V-measure": 0.587638403282499,
     "Silhouette": 0.2163198,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3749,7 +5069,7 @@ window.fallbackData = [
     "Homogeneity": 0.597911447799107,
     "V-measure": 0.557083709680292,
     "Silhouette": 0.16747905,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3760,7 +5080,7 @@ window.fallbackData = [
     "Homogeneity": 0.6192164964494371,
     "V-measure": 0.5780711005171315,
     "Silhouette": 0.16147919,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3771,7 +5091,7 @@ window.fallbackData = [
     "Homogeneity": 0.6359995987089048,
     "V-measure": 0.5885406578626474,
     "Silhouette": 0.16337842,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3782,7 +5102,7 @@ window.fallbackData = [
     "Homogeneity": 0.6350562749090521,
     "V-measure": 0.5886700628702407,
     "Silhouette": 0.16576108,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3793,7 +5113,7 @@ window.fallbackData = [
     "Homogeneity": 0.6318324754005074,
     "V-measure": 0.5823166279816051,
     "Silhouette": 0.16931435,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3804,7 +5124,7 @@ window.fallbackData = [
     "Homogeneity": 0.6140628206823465,
     "V-measure": 0.5730329069684151,
     "Silhouette": 0.1681802,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3815,7 +5135,7 @@ window.fallbackData = [
     "Homogeneity": 0.6332099616713427,
     "V-measure": 0.5865765773496031,
     "Silhouette": 0.17197432,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3826,7 +5146,7 @@ window.fallbackData = [
     "Homogeneity": 0.6278124437068028,
     "V-measure": 0.5966843568599098,
     "Silhouette": 0.17203303,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3837,7 +5157,7 @@ window.fallbackData = [
     "Homogeneity": 0.6152341334631173,
     "V-measure": 0.5634257954138601,
     "Silhouette": 0.17012575,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3848,7 +5168,7 @@ window.fallbackData = [
     "Homogeneity": 0.6355206408817993,
     "V-measure": 0.5881830257101092,
     "Silhouette": 0.17098415,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3859,7 +5179,7 @@ window.fallbackData = [
     "Homogeneity": 0.6332932416402443,
     "V-measure": 0.5924967337598854,
     "Silhouette": 0.16711237,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3870,7 +5190,7 @@ window.fallbackData = [
     "Homogeneity": 0.6314219765258262,
     "V-measure": 0.5872891058276584,
     "Silhouette": 0.16415474,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3881,7 +5201,7 @@ window.fallbackData = [
     "Homogeneity": 0.5999484133350067,
     "V-measure": 0.5576036930343741,
     "Silhouette": 0.16762166,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3892,7 +5212,7 @@ window.fallbackData = [
     "Homogeneity": 0.631223763803638,
     "V-measure": 0.5810884453317102,
     "Silhouette": 0.16343118,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3903,7 +5223,7 @@ window.fallbackData = [
     "Homogeneity": 0.6377456636152157,
     "V-measure": 0.6019286401440956,
     "Silhouette": 0.17306767,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3914,7 +5234,7 @@ window.fallbackData = [
     "Homogeneity": 0.6168899437406643,
     "V-measure": 0.5680557979593434,
     "Silhouette": 0.15908414,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3925,7 +5245,7 @@ window.fallbackData = [
     "Homogeneity": 0.5957957178654764,
     "V-measure": 0.5457333621074987,
     "Silhouette": 0.16151553,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3936,7 +5256,7 @@ window.fallbackData = [
     "Homogeneity": 0.6122654475054878,
     "V-measure": 0.5748813458607385,
     "Silhouette": 0.16532987,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3947,7 +5267,7 @@ window.fallbackData = [
     "Homogeneity": 0.6344442179135958,
     "V-measure": 0.5881435214648744,
     "Silhouette": 0.15892705,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "Mouse_Brain_E18_S1",
@@ -3958,7 +5278,7 @@ window.fallbackData = [
     "Homogeneity": 0.6170802745871091,
     "V-measure": 0.5693134760917669,
     "Silhouette": 0.16021635,
-    "model": "Arise-Silhouette"
+    "model": "Arise-Sill"
   },
   {
     "dataset": "10x_human_lymph_node_A1",
@@ -5285,6 +6605,7 @@ window.fallbackData = [
 window.fallbackLinks = {
   "Smart": "https://colab.research.google.com/drive/1TvG8uvKLsUvamK849eL-1AYDcdms7rVh?usp=sharing",
   "CAGE": "https://colab.research.google.com/drive/1mwyvQZfMjre4NHVEA53UnMowkl4Q9gZ7?usp=sharing",
-  "Arise-Silhouette": "https://colab.research.google.com/drive/1mpRbimEQ1IWCMWJND8n78PMvj8lUiWmG?usp=sharing",
+  "Arise": "https://colab.research.google.com/drive/1L1fqygr-QziLN5c80ueVmPQpU0MgYTfS?usp=sharing",
+  "Arise-Sill": "https://colab.research.google.com/drive/1mpRbimEQ1IWCMWJND8n78PMvj8lUiWmG?usp=sharing",
   "SpatialGlue": "https://colab.research.google.com/drive/1h4dMRxhSxQh7IzCJnTaft1OVDgur25tr?usp=sharing"
 };
